@@ -1,0 +1,12 @@
+.header {
+  width: 100%;
+  display: flex;
+  .navigation {
+    margin: 30px;
+    flex: 0.5;
+  }
+  .course-name {
+    margin: 25px;
+    flex: 2;
+  }
+}
