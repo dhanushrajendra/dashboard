@@ -1,0 +1,58 @@
+.overview-content {
+    display: flex;
+    margin: 60px 50px;
+    flex: 1;
+    font-family: Poppins;
+    .items-overview {
+        display: flex;
+        flex: 1;
+        .lesson-progress {
+            flex: 1;
+            .lesson {
+                border-radius: 32px;
+                min-width: 300px;
+                width: 382px;
+                min-height: 133px;
+                height: auto;
+                padding: 40px;
+                background: rgba(243, 209, 101, 0.6);
+                h1 {
+                    color: #21243d;
+                    font-size: 22px;
+                    font-weight: 600;
+                    padding: 10px 0 0 0;
+                }
+                h2 {
+                    color: #21243d;
+                    font-size: 16px;
+                    font-weight: 400;
+                    span {
+                        color: #eb5b77;
+                    }
+                }
+                .cta {
+                    padding-top: 10px;
+                    .join-class {
+                        color: white;
+                        background: #21243d;
+                        font-weight: 400;
+                        border-radius: 48px;
+                        border: none;
+                        padding: 6px 22px;
+                        margin: 0 10px 0 0;
+                    }
+                    .reschedule {
+                        color: #eb5b77;
+                        background: white;
+                        border-radius: 32px;
+                        border: none;
+                        padding: 6px 22px;
+                    }
+                }
+            }
+        }
+        .course-progress {
+            flex: 1;
+        }
+    }
+}

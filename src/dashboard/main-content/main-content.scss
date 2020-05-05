@@ -1,4 +1,37 @@
-.main-content {
+$font-family: "Poppins";
+
+.student-content {
   display: flex;
   flex: 3;
+  flex-direction: column;
+  .nav {
+    display: flex;
+    height: 20px;
+    padding-left: 52px;
+    .nav-items {
+      padding: 0 20px;
+      font-family: $font-family;
+      color: #a8abc1;
+      cursor: pointer;
+      &.active {
+        color: #21243d;
+        border-bottom: solid 2px #21243d;
+        padding: 0 0 5px 0;
+      }
+    }
+  }
+  .nav-content {
+    .nav-content-items {
+      &.active {
+        display: flex;
+        margin: 11px 10px 0 0;
+        min-height: 400px;
+        border-radius: 48px;
+        background: #f0f1f5;
+      }
+      &.inactive {
+        display: none;
+      }
+    }
+  }
 }
