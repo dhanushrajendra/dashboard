@@ -6,6 +6,7 @@ class SideBar extends Component {
     super(props);
     this.state = {
       arrayToLoop: [],
+      valueSelected: "",
     };
   }
 
@@ -38,13 +39,22 @@ class SideBar extends Component {
     });
   };
 
+  setSelectedValue(name) {
+    this.props.triggerParentUpdate(name);
+  }
+
   render() {
     return (
       <div className="side-bar">
         <div className="components">
           {this.state.arrayToLoop.map((ele, i) => (
-            <div className="single-component shaw-icon" key={i}>
-              <i className={"icon-" + ele.value}>{ele.name}</i>
+            <div
+              className="single-component shaw-icon"
+              key={i}
+              onClick={() => this.setSelectedValue(ele.name)}
+            >
+              <i className={"icon-" + ele.value}></i>
+              <p>{ele.name}</p>
             </div>
           ))}
         </div>

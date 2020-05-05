@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Router from "./router";
 import "./assets/css/icons.css";
+import "./App.css";
 
 class App extends Component {
   render() {

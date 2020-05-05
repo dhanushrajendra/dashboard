@@ -1,4 +1,29 @@
+$font-family: Poppins;
+
 .side-bar {
   display: flex;
   flex: 1;
+  .components {
+    margin: 0 20px;
+    .single-component {
+      text-align: left;
+      padding: 8px;
+      display: flex;
+      cursor: pointer;
+      i {
+        font-size: 22px;
+        color: #a8abc1;
+        &.active {
+          color: #21243d;
+        }
+      }
+      p {
+        font-family: $font-family;
+        color: #a8abc1;
+        &.active {
+          color: #21243d;
+        }
+      }
+    }
+  }
 }
